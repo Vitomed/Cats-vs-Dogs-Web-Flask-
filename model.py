@@ -22,7 +22,4 @@ class mymodel:
         else:
             return "Cat"
 
-type = 'net/binary.h5'
-file = 'dog.jpg'
-dog = mymodel(type, file)
-print(dog)
+
