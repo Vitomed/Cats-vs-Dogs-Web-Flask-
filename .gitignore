@@ -1,0 +1,14 @@
+#### Python ####
+*.py[co]
+################игнорировать файлы заканчивающиеся на .pyd
+.pyd
+#### Backups ####
+~*
+#########
+/.idea
+/miniconda
+/__pycache__
+/feautures
+/virt
+vgg16.py
+.jpg
