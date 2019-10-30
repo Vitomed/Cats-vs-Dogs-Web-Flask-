@@ -1,6 +1,5 @@
 import numpy
 from tensorflow.python.keras.models import load_model
-from tensorflow.python.keras.models import load_model
 from tensorflow.python.keras.preprocessing import image
 from tensorflow.python.keras.applications.vgg16 import preprocess_input
 
