@@ -1,8 +1,9 @@
-import os, re
-from model import mymodel
-from werkzeug.utils import secure_filename
+import os
+import re
 from flask import Flask, render_template, request, redirect, url_for
 from tensorflow.python.keras import backend as session
+from werkzeug.utils import secure_filename
+from model import mymodel
 
 UPLOAD_FOLDER = 'saveimages'
 ALLOWED_EXTENSION = set(['jpg'])
@@ -48,7 +49,7 @@ def upload():
 def error():
     return """
                 <h1> File didn`t load </h1>
-                <a href="/template"> Load correct 'name'.jpg file</a>
+                <a href="/template">Push to load correct 'name'.jpg file</a>
            """
 
 
