@@ -1,5 +1,6 @@
 import numpy
 from tensorflow.python.keras.models import load_model
+from tensorflow.python.keras.models import load_model
 from tensorflow.python.keras.preprocessing import image
 from tensorflow.python.keras.applications.vgg16 import preprocess_input
 
@@ -22,7 +23,27 @@ class mymodel:
         else:
             return "Cat"
 
-type = 'net/binary.h5'
-file = 'dog.jpg'
-dog = mymodel(type, file)
-print(dog)
+# from tensorflow.contrib import lite
+# import keras
+# from keras_self_attention import SeqSelfAttention
+#
+# type = 'net/transferlearning.h5'
+# file = 'cat.jpg'
+# new_model = load_model(type, custom_objects={'AttentionLayer': AttentionLayer})
+# converter = lite.TFLiteConverter.from_saved_model(type)
+# tflite_model = converter.convert()
+#
+# file_name = file
+# img = image.load_img(file_name, target_size=(150, 150))
+# x = image.img_to_array(img)
+# x = numpy.expand_dims(x, axis=0)
+# x = preprocess_input(x)
+# pred = new_model.predict(x)
+# number = int(pred[0][0])
+
+
+
+
+
+
+
